@@ -1,0 +1,14 @@
+C:\Users\i.kondratev.2018\source\repos\SecureApplication\SecureApplication\obj\Debug\SecureApplication.csproj.AssemblyReference.cache
+C:\Users\i.kondratev.2018\source\repos\SecureApplication\SecureApplication\obj\Debug\SecureApplication.Properties.Resources.resources
+C:\Users\i.kondratev.2018\source\repos\SecureApplication\SecureApplication\obj\Debug\SecureApplication.csproj.GenerateResource.cache
+C:\Users\i.kondratev.2018\source\repos\SecureApplication\SecureApplication\obj\Debug\SecureApplication.csproj.CoreCompileInputs.cache
+C:\Users\i.kondratev.2018\source\repos\SecureApplication\SecureApplication\bin\Debug\SecureApplication.exe.config
+C:\Users\i.kondratev.2018\source\repos\SecureApplication\SecureApplication\bin\Debug\SecureApplication.exe
+C:\Users\i.kondratev.2018\source\repos\SecureApplication\SecureApplication\bin\Debug\SecureApplication.pdb
+C:\Users\i.kondratev.2018\source\repos\SecureApplication\SecureApplication\obj\Debug\SecureApplication.exe
+C:\Users\i.kondratev.2018\source\repos\SecureApplication\SecureApplication\obj\Debug\SecureApplication.pdb
+C:\Users\i.kondratev.2018\source\repos\SecureApplication\SecureApplication\obj\Debug\SecureApplication.AddReview.resources
+C:\Users\i.kondratev.2018\source\repos\SecureApplication\SecureApplication\obj\Debug\SecureApplication.Authorization.resources
+C:\Users\i.kondratev.2018\source\repos\SecureApplication\SecureApplication\obj\Debug\SecureApplication.Registration.resources
+C:\Users\i.kondratev.2018\source\repos\SecureApplication\SecureApplication\obj\Debug\SecureApplication.Front.resources
+C:\Users\i.kondratev.2018\source\repos\SecureApplication\SecureApplication\obj\Debug\SecureApplication.UsersForm.resources
