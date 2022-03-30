@@ -60,6 +60,7 @@ namespace SecureApplication
             this.password.Name = "password";
             this.password.Size = new System.Drawing.Size(247, 20);
             this.password.TabIndex = 3;
+            this.password.UseSystemPasswordChar = true;
             this.password.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Authorization_KeyDown);
             // 
             // label2

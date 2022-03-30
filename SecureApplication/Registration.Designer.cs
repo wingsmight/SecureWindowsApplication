@@ -121,6 +121,7 @@ namespace SecureApplication
             this.label4.Size = new System.Drawing.Size(81, 13);
             this.label4.TabIndex = 8;
             this.label4.Text = "Уровень прав:";
+            this.label4.Visible = false;
             // 
             // pictureBox1
             // 
@@ -167,6 +168,7 @@ namespace SecureApplication
             this.userlevel_combobox.Name = "userlevel_combobox";
             this.userlevel_combobox.Size = new System.Drawing.Size(199, 21);
             this.userlevel_combobox.TabIndex = 14;
+            this.userlevel_combobox.Visible = false;
             // 
             // Registration
             // 

@@ -92,6 +92,7 @@ namespace SecureApplication
         {
             // TODO: данная строка кода позволяет загрузить данные в таблицу "dbDataSet.reviews". При необходимости она может быть перемещена или удалена.
             //this.reviewsTableAdapter.Fill(this.dbDataSet.reviews);
+
         }
         private void btnSave_Click(object sender, EventArgs e)
         {
