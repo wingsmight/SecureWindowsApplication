@@ -13,7 +13,7 @@ namespace SecureApplication
 {
     public partial class AddReview : Form
     {
-        private string connectionString = @"Provider=Microsoft.ACE.OLEDB.12.0;Data Source='E:\Users\Дмитрий\Desktop\Desktop\Учеба\4 курс\8 семестр\Информационная безопасность\lab4_IB\lab4_IB\bin\Release\db.accdb';Persist Security Info=True";
+        private string connectionString = @"Provider=Microsoft.ACE.OLEDB.12.0;Data Source='C:\Users\i.kondratev.2018\Desktop\db.accdb';Persist Security Info=True";
         private OleDbConnection myOleDbConnection;
         private string username;
         public bool addFlag = false;

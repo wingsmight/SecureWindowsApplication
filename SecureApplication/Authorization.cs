@@ -14,7 +14,7 @@ namespace SecureApplication
 {
     public partial class Authorization : Form
     {
-        private string connectionString = @"Provider=Microsoft.ACE.OLEDB.12.0;Data Source='E:\Users\Дмитрий\Desktop\Desktop\Учеба\4 курс\8 семестр\Информационная безопасность\lab4_IB\lab4_IB\bin\Debug\db.accdb';Persist Security Info=True";
+        private string connectionString = @"Provider=Microsoft.ACE.OLEDB.12.0;Data Source='C:\Users\i.kondratev.2018\Desktop\db.accdb';Persist Security Info=True";
         private OleDbConnection myOleDbConnection;
         public string userName = "";
         public int userType = -1;
@@ -81,18 +81,6 @@ namespace SecureApplication
         }
 
         private void Authorization_KeyDown(object sender, KeyEventArgs e)
-        {
-            if (e.KeyCode == Keys.Enter)
-                signin_Click(sender, e);
-        }
-
-        private void password_KeyDown(object sender, KeyEventArgs e)
-        {
-            if (e.KeyCode == Keys.Enter)
-                signin_Click(sender, e);
-        }
-
-        private void login_KeyDown(object sender, KeyEventArgs e)
         {
             if (e.KeyCode == Keys.Enter)
                 signin_Click(sender, e);

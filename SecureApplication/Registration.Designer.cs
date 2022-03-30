@@ -41,7 +41,7 @@ namespace SecureApplication
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.error = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            this.reg_button = new System.Windows.Forms.Button();
             this.userlevel_combobox = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -69,6 +69,7 @@ namespace SecureApplication
             this.password_textBox.Name = "password_textBox";
             this.password_textBox.Size = new System.Drawing.Size(199, 20);
             this.password_textBox.TabIndex = 3;
+            this.password_textBox.UseSystemPasswordChar = true;
             // 
             // label2
             // 
@@ -85,6 +86,7 @@ namespace SecureApplication
             this.passwordVer_textBox.Name = "passwordVer_textBox";
             this.passwordVer_textBox.Size = new System.Drawing.Size(199, 20);
             this.passwordVer_textBox.TabIndex = 5;
+            this.passwordVer_textBox.UseSystemPasswordChar = true;
             // 
             // label3
             // 
@@ -144,18 +146,23 @@ namespace SecureApplication
             this.error.TabIndex = 12;
             this.error.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // button1
+            // reg_button
             // 
-            this.button1.Location = new System.Drawing.Point(162, 182);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(193, 28);
-            this.button1.TabIndex = 13;
-            this.button1.Text = "Зарегистрироваться";
-            this.button1.UseVisualStyleBackColor = true;
+            this.reg_button.Location = new System.Drawing.Point(162, 182);
+            this.reg_button.Name = "reg_button";
+            this.reg_button.Size = new System.Drawing.Size(193, 28);
+            this.reg_button.TabIndex = 13;
+            this.reg_button.Text = "Зарегистрироваться";
+            this.reg_button.UseVisualStyleBackColor = true;
+            this.reg_button.Click += new System.EventHandler(this.reg_button_Click);
             // 
             // userlevel_combobox
             // 
             this.userlevel_combobox.FormattingEnabled = true;
+            this.userlevel_combobox.Items.AddRange(new object[] {
+            "Администратор",
+            "Менеджер",
+            "Пользователь"});
             this.userlevel_combobox.Location = new System.Drawing.Point(162, 82);
             this.userlevel_combobox.Name = "userlevel_combobox";
             this.userlevel_combobox.Size = new System.Drawing.Size(199, 21);
@@ -167,7 +174,7 @@ namespace SecureApplication
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(367, 220);
             this.Controls.Add(this.userlevel_combobox);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.reg_button);
             this.Controls.Add(this.error);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
@@ -203,7 +210,7 @@ namespace SecureApplication
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Label error;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button reg_button;
         private System.Windows.Forms.ComboBox userlevel_combobox;
     }
 }

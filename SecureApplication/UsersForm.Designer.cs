@@ -30,12 +30,12 @@ namespace SecureApplication
         private void InitializeComponent()
         {
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.button1 = new System.Windows.Forms.Button();
-            this.error = new System.Windows.Forms.Label();
-            this.dataSet1 = new System.Data.DataSet();
             this.id = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.name = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Permission = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btnSave = new System.Windows.Forms.Button();
+            this.error = new System.Windows.Forms.Label();
+            this.dataSet1 = new System.Data.DataSet();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataSet1)).BeginInit();
             this.SuspendLayout();
@@ -52,27 +52,6 @@ namespace SecureApplication
             this.dataGridView1.Size = new System.Drawing.Size(465, 215);
             this.dataGridView1.TabIndex = 0;
             // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(323, 235);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(154, 23);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "Сохранить";
-            this.button1.UseVisualStyleBackColor = true;
-            // 
-            // error
-            // 
-            this.error.AutoSize = true;
-            this.error.Location = new System.Drawing.Point(13, 244);
-            this.error.Name = "error";
-            this.error.Size = new System.Drawing.Size(0, 13);
-            this.error.TabIndex = 2;
-            // 
-            // dataSet1
-            // 
-            this.dataSet1.DataSetName = "NewDataSet";
-            // 
             // id
             // 
             this.id.HeaderText = "id";
@@ -88,16 +67,39 @@ namespace SecureApplication
             this.Permission.HeaderText = "Права";
             this.Permission.Name = "Permission";
             // 
+            // btnSave
+            // 
+            this.btnSave.Location = new System.Drawing.Point(323, 235);
+            this.btnSave.Name = "btnSave";
+            this.btnSave.Size = new System.Drawing.Size(154, 23);
+            this.btnSave.TabIndex = 1;
+            this.btnSave.Text = "Сохранить";
+            this.btnSave.UseVisualStyleBackColor = true;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
+            // 
+            // error
+            // 
+            this.error.AutoSize = true;
+            this.error.Location = new System.Drawing.Point(13, 244);
+            this.error.Name = "error";
+            this.error.Size = new System.Drawing.Size(0, 13);
+            this.error.TabIndex = 2;
+            // 
+            // dataSet1
+            // 
+            this.dataSet1.DataSetName = "NewDataSet";
+            // 
             // UsersForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(487, 267);
             this.Controls.Add(this.error);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnSave);
             this.Controls.Add(this.dataGridView1);
             this.Name = "UsersForm";
             this.Text = "Пользователи";
+            this.Load += new System.EventHandler(this.UsersForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataSet1)).EndInit();
             this.ResumeLayout(false);
@@ -108,7 +110,7 @@ namespace SecureApplication
         #endregion
 
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnSave;
         private System.Windows.Forms.Label error;
         private System.Data.DataSet dataSet1;
         private System.Windows.Forms.DataGridViewTextBoxColumn id;

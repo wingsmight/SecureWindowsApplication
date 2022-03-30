@@ -14,7 +14,7 @@ namespace SecureApplication
 {
     public partial class Registration : Form
     {
-        private string connectionString = @"Provider=Microsoft.ACE.OLEDB.12.0;Data Source='E:\Users\Дмитрий\Desktop\Desktop\Учеба\4 курс\8 семестр\Информационная безопасность\lab4_IB\lab4_IB\bin\Debug\db.accdb';Persist Security Info=True";
+        private string connectionString = @"Provider=Microsoft.ACE.OLEDB.12.0;Data Source='C:\Users\i.kondratev.2018\Desktop\db.accdb';Persist Security Info=True";
         private OleDbConnection myOleDbConnection;
         public bool regFlag = false;
         private bool isAdmin = false;

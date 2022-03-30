@@ -54,9 +54,5 @@ namespace SecureApplication
                 error.Text = "ошибка сохранения данных";
             }
         }
-        private void dataGridView1_CellValueChanged(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
     }
 }

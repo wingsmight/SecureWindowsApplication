@@ -34,7 +34,7 @@ namespace SecureApplication
             this.password = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.error = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            this.signin = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -52,6 +52,7 @@ namespace SecureApplication
             this.login.Name = "login";
             this.login.Size = new System.Drawing.Size(247, 20);
             this.login.TabIndex = 1;
+            this.login.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Authorization_KeyDown);
             // 
             // password
             // 
@@ -59,6 +60,7 @@ namespace SecureApplication
             this.password.Name = "password";
             this.password.Size = new System.Drawing.Size(247, 20);
             this.password.TabIndex = 3;
+            this.password.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Authorization_KeyDown);
             // 
             // label2
             // 
@@ -77,21 +79,22 @@ namespace SecureApplication
             this.error.TabIndex = 4;
             this.error.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // button1
+            // signin
             // 
-            this.button1.Location = new System.Drawing.Point(61, 130);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(150, 23);
-            this.button1.TabIndex = 5;
-            this.button1.Text = "Войти";
-            this.button1.UseVisualStyleBackColor = true;
+            this.signin.Location = new System.Drawing.Point(61, 130);
+            this.signin.Name = "signin";
+            this.signin.Size = new System.Drawing.Size(150, 23);
+            this.signin.TabIndex = 5;
+            this.signin.Text = "Войти";
+            this.signin.UseVisualStyleBackColor = true;
+            this.signin.Click += new System.EventHandler(this.signin_Click);
             // 
             // Authorization
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(275, 165);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.signin);
             this.Controls.Add(this.error);
             this.Controls.Add(this.password);
             this.Controls.Add(this.label2);
@@ -99,6 +102,7 @@ namespace SecureApplication
             this.Controls.Add(this.label1);
             this.Name = "Authorization";
             this.Text = "Авторизация";
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Authorization_KeyDown);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -111,6 +115,6 @@ namespace SecureApplication
         private System.Windows.Forms.TextBox password;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label error;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button signin;
     }
 }

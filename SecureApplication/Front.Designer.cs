@@ -58,7 +58,7 @@ namespace SecureApplication
             // typeUserLabel
             // 
             this.typeUserLabel.AutoSize = true;
-            this.typeUserLabel.Location = new System.Drawing.Point(16, 30);
+            this.typeUserLabel.Location = new System.Drawing.Point(13, 30);
             this.typeUserLabel.Name = "typeUserLabel";
             this.typeUserLabel.Size = new System.Drawing.Size(42, 13);
             this.typeUserLabel.TabIndex = 1;
@@ -72,6 +72,7 @@ namespace SecureApplication
             this.button1.TabIndex = 2;
             this.button1.Text = "Пользователи";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Visible = false;
             // 
             // users
             // 
@@ -86,6 +87,8 @@ namespace SecureApplication
             this.users.Name = "users";
             this.users.Size = new System.Drawing.Size(573, 236);
             this.users.TabIndex = 3;
+            this.users.Visible = false;
+            this.users.Click += new System.EventHandler(this.users_Click);
             // 
             // Number
             // 
@@ -120,6 +123,8 @@ namespace SecureApplication
             this.add.TabIndex = 4;
             this.add.Text = "Добавить отзыв";
             this.add.UseVisualStyleBackColor = true;
+            this.add.Visible = false;
+            this.add.Click += new System.EventHandler(this.add_Click);
             // 
             // btnSave
             // 
@@ -129,6 +134,8 @@ namespace SecureApplication
             this.btnSave.TabIndex = 5;
             this.btnSave.Text = "Сохранить";
             this.btnSave.UseVisualStyleBackColor = true;
+            this.btnSave.Visible = false;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // reg_button
             // 
@@ -136,8 +143,9 @@ namespace SecureApplication
             this.reg_button.Name = "reg_button";
             this.reg_button.Size = new System.Drawing.Size(129, 23);
             this.reg_button.TabIndex = 6;
-            this.reg_button.Text = "Зарегистрировать";
+            this.reg_button.Text = "Регистрация";
             this.reg_button.UseVisualStyleBackColor = true;
+            this.reg_button.Click += new System.EventHandler(this.reg_button_Click);
             // 
             // authorization_button
             // 
@@ -145,8 +153,9 @@ namespace SecureApplication
             this.authorization_button.Name = "authorization_button";
             this.authorization_button.Size = new System.Drawing.Size(100, 23);
             this.authorization_button.TabIndex = 7;
-            this.authorization_button.Text = "Выйти";
+            this.authorization_button.Text = "Войти";
             this.authorization_button.UseVisualStyleBackColor = true;
+            this.authorization_button.Click += new System.EventHandler(this.authorization_button_Click);
             // 
             // error
             // 
@@ -171,6 +180,7 @@ namespace SecureApplication
             this.Controls.Add(this.userNameLabel);
             this.Name = "Front";
             this.Text = "Программа";
+            this.Load += new System.EventHandler(this.Front_Load);
             ((System.ComponentModel.ISupportInitialize)(this.users)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
